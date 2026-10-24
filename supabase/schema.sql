@@ -7,7 +7,7 @@ CREATE TABLE public.profiles (
   email TEXT NOT NULL UNIQUE,
   full_name TEXT,
   role TEXT CHECK (role IN ('admin', 'staff')) DEFAULT 'staff',
-  is_active BOOLEAN DEFAULT false, -- Requires Admin Approval/Activation
+  is_active BOOLEAN DEFAULT true, -- Requires Admin Approval/Activation
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 

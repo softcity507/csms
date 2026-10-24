@@ -1,3 +1,7 @@
+i want to make as Custom session management system using nextjs and supabase and jwt token based session management system
+Admin can add multiple tool in admin page with complete Authentication and Authorization and admin have all permissions
+USER AND ADMIN  first login from google and can add tools and user in same domain and user wait to permission from admin.
+After permission Allow from admin user can use all tools on same domain like seopark.org
 staff-access-portal/
 ├── supabase/
 │   ├── functions/                  # Supabase Edge Functions
