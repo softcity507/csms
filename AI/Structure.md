@@ -2,31 +2,6 @@
 
 This repository currently contains a minimal Next.js App Router starter and an initial Supabase schema. The assessment's proposed portal is not implemented yet. Keep new code in the existing root-level `app/` structure unless the project is deliberately migrated; do not document a nonexistent `src/` tree as current.
 
-## Current repository
-
-```text
-csms/
-├── AI/
-│   ├── CONTEXT-FIRST.md
-│   ├── Structure.md
-│   └── firststep.md
-├── app/
-│   ├── favicon.ico
-│   ├── globals.css
-│   ├── layout.tsx       # Root layout and metadata
-│   └── page.tsx         # Placeholder home page
-├── public/              # Static assets
-├── supabase/
-│   ├── migrations/
-│   │   └── 20261024000000_init_schema.sql
-│   └── schema.sql
-├── zustand/             # Present; no files currently listed
-├── .env.example         # Example keys; never put real credentials here
-├── next.config.ts
-├── package.json
-├── package-lock.json
-└── tsconfig.json
-```
 
 There is no `src/` directory. Current dependencies include Next.js 16, React 19, Zustand, Prisma, and NextAuth. Supabase client/SSR packages and `jose` are not currently dependencies. Check current installed Next.js documentation under `node_modules/next/dist/docs/` before implementing routes, middleware/proxy, rewrites, or other framework-specific behavior, as required by `AGENTS.md`.
 
