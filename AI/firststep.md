@@ -1,4 +1,5 @@
  i want you to make a plan on how to build SSO Gateway: Build Plan (Next.js + Supabase)
+ Like seopark.org that is share account but individual token and session for see own data. but all share acount will same but token and session on same domain
 - What to build
 Build a single-domain SSO gateway in a Next.js App Router project on localhost:3000, using Supabase for authentication and database. 
 - Step 1: 

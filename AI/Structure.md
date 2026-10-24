@@ -1,7 +1,10 @@
 i want to make as Custom session management system using nextjs and supabase and jwt token based session management system
 Admin can add multiple tool in admin page with complete Authentication and Authorization and admin have all permissions
-USER AND ADMIN  first login from google and can add tools and user in same domain and user wait to permission from admin.
-After permission Allow from admin user can use all tools on same domain like seopark.org
+USER AND ADMIN  first login from google and can add tools and user in same domain and user does not wait to permission default true can use tools from admin subaccount that is added from admin side but all share acount will same but token and session for see same data searched in past not can other user data see.
+user can use all tools on same domain like seopark.org
+
+
+
 staff-access-portal/
 ├── supabase/
 │   ├── functions/                  # Supabase Edge Functions
@@ -36,6 +39,9 @@ staff-access-portal/
 │   │   ├── api/                    # Client-side API Routes (for internal proxy checks)
 │   │   │   └── launch/
 │   │   │       └── route.ts        # Enforces session, expiry check & redirect
+│   │   ├── tools/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx        # Dynamic Tool Handler & Token Verifier
 │   │   ├── error.tsx
 │   │   ├── layout.tsx
 │   │   └── page.tsx                # Public Landing Page / Redirect to Login
